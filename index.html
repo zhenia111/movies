@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css">
+  <title>Movie App</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="header__content">
+      <a href="index.html" class="header__logo">MovieApp</a>
+      <form>
+        <input type="text" class="header__search" placeholder="Поиск" />
+        <button class="header__btn">найти</button>
+      </form>
+    </div>
+
+  </header>
+  <div class="container">
+
+    <div class="search">
+      <div class="search__items">
+        <div data-id='0' class="search__item active">Все</div>
+        <!-- <div class="search__item">Комедия</div>
+        <div class="search__item">Драма</div> -->
+      </div>
+    </div>
+
+    <nav class="rating">
+      <ul class="rating__list">
+        <li>
+          <a class="rating__link " href=""> рейтинг фильмов</a>
+          <ul class="sub-rating">
+            <li>
+              <a data-rating="all" class="sub-rating__link active" href="">любой</a>
+            </li>
+           
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slider-rating">
+      <h2 class="slider-rating__title">рейтинг фильмов</h2>
+      <output for="fader" id="volume">0</output>
+      <input class="slider-rating__input" type="range" id="fader" min="0" max="10" value="0" step="1">
+    </div>
+
+    <div class="movies">
+      <!-- <div class="movie">
+    <div class="movie__cover-inner">
+      <img src="urlPreview" alt="nameRu" class="movie__cover">
+      <div class="movie__cover--darkened"></div>
+    </div>
+    <div class="movie__info">
+      <div class="movie__title">nameRu</div>
+      <div class="movie__category">genres</div>
+      <div class="movie__average movie__average--green">rating</div>
+    </div>
+  </div> -->
+    </div>
+
+    <div class="modal">
+      <!-- <div class="modal__card">
+        <div class="modal__header">
+          <img class="modal__img" src="https://kinopoiskapiunofficial.tech/images/posters/kp/4642708.jpg" alt="asfs">
+          <div class="modal__close">x</div>
+          <div class="movie__average ">7.4</div>
+        </div>
+        <div class="modal__descr">
+          <ul class="modal__list">
+            <li>Название:</li>
+            <li>Жанры:</li>
+            <li>Год выпуска:</li>
+            <li>Страна:</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+
+  </div>
+
+
+
+
+  <!-- <script src="js/app.js"></script> -->
+  <script src="js/script.js"></script>
+  <script src="js/filterGenres.js"></script>
+
+</body>
+
+</html>
